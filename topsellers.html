@@ -13,60 +13,169 @@
   </head>
   <body>
     <main>
-    <section class="container top-sellers-container" id="top_sellers">
-      <div class="top-sellers">
-        <h2 class="top-sellers-title">
-          <span class="title-top">TOP</span> SELLERS
-        </h2>
-        <ul class="top-sellers-list list">
-          <li class="top-sellers-items">
-            <img
-              src="./images/topsellers-img01.jpg"
-              alt="chocolate"
-              class="top-sellers-image"
-              width="368"
-              height="464" />
-          </li>
-          <p class="top-sellers-msg hidden-tab_desktop">
-            Crazy enough chocolate originates from a<br />
-            bean just like the coffee bean called Cacao.<br />
-            Cacao has been around for thousands of<br />
-            years and was first discovered by the Native<br />
-            American tribe called the Mayans.
-          </p>
-          <li class="top-sellers-items">
-            <img
-              src="./images/topsellers-img02.jpg"
-              alt="chocolate"
-              class="top-sellers-image"
-              width="368"
-              height="464" />
-          </li>
+      <section class="container top-sellers-container" id="top_sellers">
+        <div class="top-sellers">
+          <h2 class="top-sellers-title">
+            <span class="title-top">TOP</span> SELLERS
+          </h2>
+          <ul class="top-sellers-list list">
+            <li class="top-sellers-items">
+              <img
+                src="./images/topsellers-img01.jpg"
+                alt="chocolate"
+                class="top-sellers-image"
+                width="368"
+                height="464" />
+            </li>
+            <p class="top-sellers-msg hidden-tab_desktop">
+              Crazy enough chocolate originates from a<br />
+              bean just like the coffee bean called Cacao.<br />
+              Cacao has been around for thousands of<br />
+              years and was first discovered by the Native<br />
+              American tribe called the Mayans.
+            </p>
+            <li class="top-sellers-items">
+              <img
+                src="./images/topsellers-img02.jpg"
+                alt="chocolate"
+                class="top-sellers-image"
+                width="368"
+                height="464" />
+            </li>
 
-          <li class="top-sellers-items">
+            <li class="top-sellers-items">
+              <img
+                src="./images/topsellers-img03.jpg"
+                alt="chocolate"
+                class="top-sellers-image hidden-img"
+                width="368"
+                height="464" />
+            </li>
+          </ul>
+
+          <div class="wrap-top-sellers">
+            <p class="top-sellers-msg hidden-mobile">
+              Crazy enough chocolate originates from a bean just like the<br />
+              coffee bean called Cacao. Cacao has been around for<br />
+              thousands of years and was first discovered by the Native<br />
+              American tribe called the Mayans.
+            </p>
+
+            <button type="button" class="buy-btn" data-sellers-open>
+              Buy now
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--buy-now-modal-->
+    <div class="buy-modal-bg is-hidden" data-sellers>
+      <div class="order-modal">
+        <button class="close-modal" data-sellers-close>
+          <svg class="close-modal-icon">
+            <use href="./images/icon.svg#close"></use>
+          </svg>
+        </button>
+        <p class="order-header">
+          <span class="title-order">BUY</span
+          ><span class="title-now"> NOW</span>
+        </p>
+        <ul class="order-choco-box">
+          <li class="order-choco-items">
             <img
-              src="./images/topsellers-img03.jpg"
-              alt="chocolate"
-              class="top-sellers-image hidden-img"
-              width="368"
-              height="464" />
+              src="./images/topseller-choco-img01.png"
+              width="120"
+              alt="Chocolate" />
+            <h3 class="unit-choco">100 g</h3>
+          </li>
+          <li class="order-choco-items">
+            <img
+              src="./images/topseller-choco-img01.png"
+              width="120"
+              alt="Chocolate" />
+            <h3 class="unit-choco">200 g</h3>
+          </li>
+          <li class="order-choco-items">
+            <img
+              src="./images/topseller-choco-img01.png"
+              width="120"
+              alt="Chocolate" />
+            <h3 class="unit-choco">300 g</h3>
           </li>
         </ul>
+        <!--form-->
+        <form
+          name="signup_form"
+          autocomplete="on"
+          class="container-form list"
+          method="">
+          <span class="form-text">Personal Information </span>
+          <label class="form-name">
+            <input
+              type="text"
+              class="form_name-input"
+              name="firstname"
+              placeholder="Name"
+              required />
+            <input
+              type="text"
+              class="form_name-input"
+              name="surname"
+              placeholder="Surname"
+              required />
+          </label>
 
-        <div class="wrap-top-sellers">
-          <p class="top-sellers-msg hidden-mobile">
-            Crazy enough chocolate originates from a bean just like the<br />
-            coffee bean called Cacao. Cacao has been around for<br />
-            thousands of years and was first discovered by the Native<br />
-            American tribe called the Mayans.
-          </p>
+          <span class="form-text">Email </span>
+          <label class="form-name">
+            <input
+              type="email"
+              class="form_name-input"
+              name="email"
+              placeholder="Enter your email"
+              required />
+          </label>
 
-          <button type="button" class="buy-btn" data-sellers-open>
-            Buy now
-          </button>
-        </div>
+          <span class="form-text">Phone number </span>
+          <label class="form-name">
+            <input
+              type="tel"
+              class="form-tel"
+              name="telephone"
+              placeholder="Phone number"
+              required />
+            <div class="form-svg-box">
+              <svg class="form-icon">
+                <use href="./images/icon.svg#intl-flag"></use>
+              </svg>
+              <span class="form-tele-code">+380 </span>
+            </div>
+          </label>
+
+          <span class="form-text">Card number </span>
+          <label class="form-name">
+            <input
+              type="tel"
+              class="form-card"
+              name="creditcard"
+              placeholder="Enter card"
+              required />
+            <svg class="form-icon-card">
+              <use href="./images/icon.svg#master-card"></use>
+            </svg>
+          </label>
+
+          <span class="form-text">Comment</span>
+          <label class="form-name">
+            <textarea
+              name="comment"
+              class="form-textarea"
+              placeholder="Enter text"
+              required></textarea>
+          </label>
+
+          <button type="submit" class="form-button">Send</button>
+        </form>
       </div>
-      </main>
-    </section>
+    </div>
   </body>
 </html>
